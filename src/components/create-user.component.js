@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-export default class CreateUser extends Component {
+export default class CreateFile extends Component {
 
     constructor(props) {
         super(props)
@@ -59,11 +59,11 @@ export default class CreateUser extends Component {
             <div className="wrapper">
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
-                        <label>Add User Name</label>
+                        <label>Add File Name</label>
                         <input type="text" value={this.state.name} onChange={this.onChangeUserName} className="form-control" />
                     </div>
                     <div className="form-group">
-                        <label>Add User Email</label>
+                        <label>Add Data Type</label>
                         <input type="text" value={this.state.email} onChange={this.onChangeUserEmail} className="form-control" />
                     </div>
                     <div className="form-group">
